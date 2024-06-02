@@ -1,0 +1,15 @@
+@import url('./styles/Variables.scss');
+@import url('./styles/Styles_composents/hearder.scss');
+@import url('./styles/Styles_composents/footer.scss');
+@import url('./styles/Styles_composents/Acceuil/Acceuil.scss');
+@import url('./styles/Styles_composents/Decouvrir/Decouvrir.scss');
+@import url('./styles/Styles_composents/DetailProduit/detailProduit.scss');
+@import url('./styles/Styles_composents/Profil/Profil.scss');
+::after,::before,*{
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+}

@@ -1,0 +1,39 @@
+.filtre{ 
+    width: calc(120px + 2vw );
+    padding: 20px 15px;
+    border: solid 1px var(--black__opacity);
+    font-size: 25px;
+    border-radius: 5px;
+    height: 100px;
+    min-width: 120px;
+    .filtre_h5{
+        margin-bottom: 15px;
+    }
+    .filtre__div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .filtre_selection{
+            font-size: 15px;
+            display: flex;
+            gap: 10px;
+            position: relative;
+            .input{
+                
+                opacity: 1;
+                &:active~.p{
+                    background-color: var(--primary);
+                }
+            }
+            .p{
+                position: absolute;
+                height: 15px;
+                width: 15px;
+                border-radius: 2px;
+                background-color: var(--white);
+                border: solid 1px var(--black__opacity);
+                color: var(--white);
+            }
+        }
+    }
+}

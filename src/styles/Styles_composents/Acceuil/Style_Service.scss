@@ -1,0 +1,21 @@
+.service{
+    width: 120px;
+    height: 120px;
+    box-shadow: 2px 2px 1px var(--gry),-2px -2px 1px var(--gry);
+    border-radius: 5px;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    .h5{
+        font-size: 20px;
+    }
+    .p{
+        font-size: 12px;
+    }
+    .icon{
+        margin: 0% auto;
+    }
+}

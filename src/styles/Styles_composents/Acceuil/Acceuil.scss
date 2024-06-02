@@ -1,0 +1,30 @@
+@import url('./Style_Affiche.scss');
+@import url('./Style_Prouduit.scss');
+@import url('./Style_Service.scss');
+@import url('./Style_Suggestion.scss');
+
+.acceuil{
+    .acceuil__center{
+        width: 80%;
+        margin: 0% auto;
+        text-align: center;
+        font-size: 25px;
+        .h2{
+            margin: 3rem 0px;
+            .span{
+                color: var(--primary);
+            }
+        }
+        .acceuil__center__produit,.acceuil__center__suggestion{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+        .acceuil__center__service{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    }
+}

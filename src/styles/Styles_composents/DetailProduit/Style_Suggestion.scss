@@ -1,0 +1,21 @@
+.det_suggestion{
+    width: 140px;
+    height: 200px;
+    color: var(--black);
+      .det_sugestion__img{
+          width: 100%;
+          height: 160px;
+          border-radius: 7px;
+          object-fit: cover;
+      }
+      .det_suggestion__texte{
+          .det_suggestion__h6{
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+          .det_suggestion__texte__prix{
+             display: flex;
+             justify-content: space-between;
+          }
+      }
+}

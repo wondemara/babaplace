@@ -1,0 +1,35 @@
+@import url('./Style_Recherche.scss');
+@import url('./Style_filtre.scss');
+@import url('./Style_produit.scss');
+
+.decouvrir{
+    position: relative;
+    width: 100%;
+    .decouvrire__img{
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .h5{
+        position: absolute;
+        top: 150px;
+        font-size: 30px;
+        color: var(--white);
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+   .decouvrir_center{
+       display: flex;
+       width: 80%;
+       margin: 0% auto;
+       justify-content: space-between;
+       gap: 2rem;
+       flex-wrap: wrap;
+       .center__produit_Liste{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       }
+   }
+  
+}

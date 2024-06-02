@@ -1,0 +1,87 @@
+@import url('./Style_info.scss');
+@import url('./Style_maps.scss');
+@import url('./Style_Suggestion.scss');
+
+
+.detailProduit{       
+    .detailProduit_descrip{
+         height: 100px;
+         background-color: var(--gry);
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+         font-size: 20px;
+        }
+        .detailProduit__infos{
+            width: 80%;
+            margin: 0% auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 1rem;
+        .infos__image{
+           .img{
+               width: calc(300px + 5vw);
+               height: 300px;
+               border-radius: 5px;
+            }
+            .infos__image__plus{
+            width: calc(300px + 5vw);
+            display: flex;
+            justify-content: space-between;
+            .img{
+                margin-top: 1rem;
+                width: 80px;
+                height: 60px;
+            }
+           }
+        }
+        .infos__texte{
+            width: calc(300px + 5vw);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+            .infos__texte__service,.infos__texte__prix{
+                display: flex;
+                gap: 5rem;
+                .service__iconne{
+                display: flex;
+                gap: 1rem;
+               }
+            }
+            .infos__texte__prix{
+                gap: 7rem;
+                .prix__infos{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .prix__infos__texte{
+                        font-weight: 600;
+                    }
+                    .prix__infos__numbre{
+                        color: var(--primary);
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+        }
+    }
+    .detailProduit__suggestion__titre{
+        margin-left: 4rem;
+        font-size: 20px;
+    }
+    .detailProduit__suggestion{
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        background-color: var(--gry);
+        justify-content: center;
+    }
+}
