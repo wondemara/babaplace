@@ -2,6 +2,7 @@ import React from 'react'
 import Hearder from '../Composents/Hearder'
 import Footer from '../Composents/Footer'
 import Navigation from '../Composents/Profil/Navigation'
+import Information from '../Composents/Profil/Information'
 
 
 const Profil = () => {
@@ -14,6 +15,7 @@ const Profil = () => {
       <br /><br />
        <div className='profil__center'>
            <Navigation />
+           <Information />
        </div>
        <br /><br />
       <Footer/>

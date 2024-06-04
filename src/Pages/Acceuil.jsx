@@ -5,6 +5,7 @@ import Produit from '../Composents/Acceuil/Produit'
 import Service from '../Composents/Acceuil/Service'
 import Suggestion from '../Composents/Acceuil/Suggestion'
 import Footer from '../Composents/Footer'
+import Offre from '../Composents/Acceuil/Offre'
 
 
 
@@ -29,8 +30,9 @@ const Acceuil = () => {
               <Service/>
               <Service/>
               <Service/>
+
           </div>
-           <h2 className='h2'>Suggestion<span className='span'>  d’appartement !</span></h2>
+           <h2 className='h2'>Suggestion<span className='span'>  d’appartement !</span></h2>        
           <div className="acceuil__center__suggestion">
             <Suggestion/>
             <Suggestion/>

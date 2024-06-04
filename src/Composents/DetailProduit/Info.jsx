@@ -1,7 +1,7 @@
 import React from 'react'
 import LazyLoad from 'react-lazyload'
 
-const Info = ({nom}) => {
+const Info = React.memo(({nom}) => {
   return (
     <div className='info'>
       <LazyLoad height={200}  once={true}  debounce={400}  throttle={400} offset={200}>
@@ -37,6 +37,6 @@ const Info = ({nom}) => {
     </LazyLoad>
     </div>
   )
-}
+})
 
 export default Info

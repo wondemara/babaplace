@@ -6,10 +6,12 @@ import { MdOutlineMapsHomeWork } from "react-icons/md";
 import Info from '../Composents/DetailProduit/Info';
 import Maps from '../Composents/DetailProduit/Maps';
 import Suggestion from '../Composents/DetailProduit/Suggestion';
-
+import { IoMdAdd } from "react-icons/io";
+import ImagePlus from '../Composents/DetailProduit/ImagePlus';
 
 
 const DetailProduit = () => {
+  const [vue,SetVue] = React.useState(false)
   return (
     <div className='detailProduit'>
       <Hearder />
@@ -17,6 +19,9 @@ const DetailProduit = () => {
           <h4>Appartement de Luxe de 4 Chambres avec Vue Imprenable</h4>
         </div>
         <br /><br />
+       {
+        vue ?  <ImagePlus SetVue={SetVue}/> :''
+       }
         <div className='detailProduit__infos'> 
          <LazyLoad height={200}  once={true}  debounce={500}  throttle={500} offset={200}>
            <div className='infos__image'>
@@ -24,7 +29,12 @@ const DetailProduit = () => {
              <div className='infos__image__plus'>
                <img className='img' src="Assets/herob.png" alt="imagee de la maison" loading='lazy'/>        
                <img className='img' src="Assets/herob.png" alt="imagee de la maison" loading='lazy'/>        
-               <img className='img' src="Assets/herob.png" alt="imagee de la maison" loading='lazy'/>                     
+               <div className='infos__image__plus__button'>
+                  <img className='img' src="Assets/herob.png" alt="imagee de la maison" loading='lazy'/>
+                  <div onClick={()=>SetVue(true)} className='img__button'>
+                    <IoMdAdd className='icon'/>
+                  </div>
+               </div>                     
              </div>
            </div>
          </LazyLoad>

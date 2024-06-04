@@ -1,4 +1,6 @@
 @import url('./Style_navigation.scss');
+@import url('./Style_information.scss');
+
 .profil{
     .profil_descrip{
         height: 100px;
@@ -18,5 +20,7 @@
     .profil__center{
         width: 80%;
         margin: 0% auto;
+        display: flex;
+        justify-content: space-between;
     }
 }

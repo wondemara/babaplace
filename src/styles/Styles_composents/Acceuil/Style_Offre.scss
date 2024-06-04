@@ -1,0 +1,18 @@
+.offre{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    .offre__texte{
+        display: flex;
+        gap: 2rem;
+        font-size: 15px;
+        text-align: left;
+        flex-direction: column;
+        .offre__texte__h5{
+            font-size: 20px;
+            .icons{
+                color: var(--primary);
+            }
+        }
+    }
+}

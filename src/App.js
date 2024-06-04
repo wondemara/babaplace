@@ -17,10 +17,6 @@ function App() {
            <Route path="/profil/:id" element={<Profil/>} />
            <Route path="/:id" element={<DetailProduit/>} />
            <Route path="/profil/:id/personne_detail" element={<Profil/>}/>
-           <Route path="/profil/:id/preferences" element={<Profil/>}/>
-           <Route path="/profil/:id/securite" element={<Profil/>}/>
-           <Route path="/profil/:id/messages" element={<Profil/>}/>
-           <Route path="/profil/:id/setting" element={<Profil/>}/>
            <Route path="/profil/:id/biens" element={<Profil/>}/>
          </Routes>
          </Suspense>

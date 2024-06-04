@@ -1,7 +1,7 @@
 @import url('./Style_info.scss');
 @import url('./Style_maps.scss');
 @import url('./Style_Suggestion.scss');
-
+@import url('./Style_Imageplus.scss');
 
 .detailProduit{       
     .detailProduit_descrip{
@@ -31,11 +31,33 @@
             width: calc(300px + 5vw);
             display: flex;
             justify-content: space-between;
-            .img{
+            .img,.img__button{
                 margin-top: 1rem;
                 width: 80px;
                 height: 60px;
             }
+            .infos__image__plus__button{
+                position: relative;
+                .img{
+                    filter: grayscale();
+                }
+                .img__button{
+                 position: absolute;
+                 background-color: var(--black__opacity);
+                 border-radius: 5px;
+                 top: 0;
+                 font-size: 20px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 .icon{
+                    background-color: var(--gry);
+                    color: var(--black);
+                    padding: 5px;
+                    border-radius: 50%;
+                 }
+                }
+              }
            }
         }
         .infos__texte{
@@ -76,7 +98,6 @@
         font-size: 20px;
     }
     .detailProduit__suggestion{
-        width: 100%;
         padding: 2rem;
         display: flex;
         gap: 3rem;
